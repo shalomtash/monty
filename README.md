@@ -17,7 +17,7 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument.
 Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode .
 ## The monty program
-## Usage: monty file
+### Usage: monty file
 where file is the path to the file containing Monty byte code
 
 If the user does not give any file or more than one argument to your program, print the error message USAGE: monty file, followed by a new line, and exit with the status EXIT_FAILURE
@@ -38,81 +38,118 @@ You have to use malloc and free and are not allowed to use any other function fr
 ### Learning Objectives💡
 What you should learn from this project:
 
--What do LIFO and FIFO mean
+ -What do LIFO and FIFO mean
 
--What is a stack, and when to use it
+ -What is a stack, and when to use it
 
--What is a queue, and when to use it
+ -What is a queue, and when to use it
 
--What are the common implementations of stacks and queues
+ -What are the common implementations of stacks and queues
 
--What are the most common use cases of stacks and queues
+ -What are the most common use cases of stacks and queues
 
--What is the proper way to use global variables
+ -What is the proper way to use global variables
+
+
+## Opcode with description
+
 
 [0. push, pall]
+
 *Implement the push and pall opcodes.
+
 *The opcode push pushes an element to the stack.
+
 *The opcode pall prints all the values on the stack, starting from the top of the stack.
 
 [1. pint]
+
 *Implement the pint opcode.
+
 *The opcode pint prints the value at the top of the stack, followed by a new line.
 
 [2. pop]
+
 *Implement the pop opcode.
+
 *The opcode pop removes the top element of the stack.
 
 [3. swap]
+
 *Implement the swap opcode.
+
 *The opcode swap swaps the top two elements of the stack.
 
 [4. add]
+
 *Implement the add opcode. 
+
 *The opcode add adds the top two elements of the stack.
 
 [5. nop]
+
 *Implement the nop opcode.
+
 *The opcode nop doesn’t do anything.
 
 [6. sub]
+
 *Implement the sub opcode.
+
 *The opcode sub subtracts the top element of the stack from the second top element of the stack.
 
 [7. div]
+
 *Implement the div opcode.
+
 *The opcode div divides the second top element of the stack by the top element of the stack.
 
 [8. mul]
+
 *Implement the mul opcode.
+
 *The opcode mul multiplies the second top element of the stack with the top element of the stack.
 
 [9. mod]
+
 *Implement the mod opcode.
+
 *The opcode mod computes the rest of the division of the second top element of the stack by the top element of the stack.
 
 [10. comments]
+
 *Every good language comes with the capability of commenting. When the first non-space character of a line is #, treat this line as a comment (don’t do anything).
 
 [11. pchar]
+
 *Implement the pchar opcode.
+
 *The opcode pchar prints the char at the top of the stack, followed by a new line.
 
 [12. pstr]
+
 *Implement the pstr opcode.
+
 *The opcode pstr prints the string starting at the top of the stack, followed by a new line.
 
 [13. rotl]
+
 *Implement the rotl opcode.
+
 *The opcode rotl rotates the stack to the top.
 
 [14. rotr]
+
 *Implement the rotr opcode.
+
 *The opcode rotr rotates the stack to the bottom.
 
 [15. stack, queue]
+
 *Implement the stack and queue opcodes.
+
 *Stack sets the format of the data to a stack (LIFO)
+
 *Queue sets the format of the data to a queue (FIFO).
 
 [16. ALX School]
@@ -120,7 +157,9 @@ What you should learn from this project:
 
 [17. Add two digits]
 *Add two digits given by the user.
+
 *Read the two digits from stdin, add them, and print the result
+
 *The total of the two digits with be one digit-long (<10)
 # Author
 
